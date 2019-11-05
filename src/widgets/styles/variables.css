@@ -1,0 +1,51 @@
+:root {
+	/* Colours */
+	--grey-900: #212121;
+	--grey-800: #424242;
+	--grey-600: #757575;
+	--grey-500: #9E9E9E;
+	--grey-200: #eee;
+	--grey-100: #f5f5f5;
+	--grey-50: #fafafa;
+
+	--light-green-500: #8BC34A;
+	--light-green-300: #AED581;
+	--deep-orange-500: #FF5722;
+	--deep-orange-300: #FF8A65;
+	--deep-purple-800: #4527A0;
+	--deep-purple-500: #673AB7;
+	--deep-purple-400: #7E57C2;
+	--red-500: #F44336;
+	--red-400: #EF5350;
+
+	--color-highlight: #673ab7;
+	--color-highlight-border:#673ab7;
+
+
+	/* Useable vars */
+	--font-family:  "Roboto", "Helvetica", "Arial", sans-serif;
+
+	--primary: var(--light-green-500);
+	--primary-hover: var(--light-green-300);
+
+	--success: var(--light-green-500);
+	--success-hover: var(--light-green-300);
+	--warn: var(--deep-orange-500);
+	--warn-hover: var(--deep-orange-300);
+	--error: var(--red-500);
+	--text: var(--grey-900);
+	--heading: var(--grey-800);
+	--grey-text: var(--grey-600);
+	--light-text: var(--grey-50);
+
+	--incomplete: var(--grey-100);
+	--clickable: var(--grey-200);
+
+	--accent: var(--deep-purple-500);
+	--accent-hover: var(--deep-purple-400);
+	--accent-background: #FAF5FF;
+
+	--menu-header: var(--deep-purple-800);
+	--menu-body: #2b223c;
+	--menu-icon: var(--grey-500);
+}

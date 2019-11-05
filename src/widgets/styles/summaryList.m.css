@@ -1,0 +1,18 @@
+.root {
+	display: flex;
+}
+
+.root > li {
+	flex: 1;
+	text-align: center;
+	border-right: 1px solid rgba(0, 0, 0, .12);
+	box-sizing: border-box;
+}
+
+.root > li:last-child {
+	border-right: none;
+}
+
+.root > li > strong {
+	display: block;
+}

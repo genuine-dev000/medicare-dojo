@@ -1,0 +1,153 @@
+.root {
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.04em;
+	line-height: 1;
+	display: flex;
+	min-height: 48px;
+	box-sizing: border-box;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	padding: 16px;
+	cursor: default;
+	color: rgba(0,0,0, 0.87);
+	overflow: hidden;
+}
+
+.border {
+	border-bottom: 1px solid rgba(0, 0, 0, .12);
+}
+
+.primaryContent {
+	order: 0;
+	flex-grow: 2;
+	text-decoration: none;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+}
+
+.primaryContent .icon {
+	margin-right: 32px;
+}
+
+.primaryContent .leadIcon {
+	margin-right: 16px;
+}
+
+.secondaryContent {
+	display: flex;
+	flex-flow: column;
+	align-items: flex-end;
+	margin-left: 16px;
+}
+
+.secondaryContent .secondaryAction label {
+	display: inline;
+}
+
+.secondaryContent .secondaryInfo {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1;
+	letter-spacing: 0;
+	color: rgba(0,0,0, 0.54);
+}
+
+.secondaryContent .subHeader {
+	padding: 0 0 0 16px;
+}
+
+
+.icon {
+	height: 24px;
+	width: 24px;
+	font-size: 24px;
+	box-sizing: border-box;
+	color: rgb(117,117,117);
+}
+
+.clickable {
+	cursor: pointer;
+}
+
+
+.avatar {
+	height: 40px;
+	width: 40px;
+	box-sizing: border-box;
+	border-radius: 50%;
+	background-color: rgb(117,117,117);
+	font-size: 40px;
+	color: white;
+}
+
+
+.twoLine {
+	height: 72px;
+}
+
+.twoLine .primaryContent {
+	height: 36px;
+	line-height: 20px;
+	display: block;
+}
+
+.twoLine .primaryContent .avatar {
+	float: left;
+}
+
+.twoLine .primaryContent .icon {
+	float: left;
+	margin-top: 6px;
+}
+
+.twoLine .primaryContent .secondaryContent {
+	height: 36px;
+}
+
+.twoLine .primaryContent .subtitle {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0;
+	line-height: 18px;
+	color: rgba(0,0,0, 0.54);
+	display: block;
+	padding: 0;
+}
+
+
+.threeLine {
+	height: 88px;
+}
+
+.threeLine .primaryContent {
+	height: 52px;
+	line-height: 20px;
+	display: block;
+}
+
+.threeLine .primaryContent .avatar,
+.threeLine .primaryContent .icon {
+	float: left;
+}
+
+.threeLine .secondaryContent {
+	height: 52px;
+}
+
+.threeLine .textBody {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0;
+	line-height: 18px;
+	height: 52px;
+	color: rgba(0,0,0, 0.54);
+	display: block;
+	padding: 0;
+}

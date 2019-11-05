@@ -1,0 +1,36 @@
+@import './widgets/styles/variables.css';
+.root {
+    padding-top:64px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+div[class*="text-input-"]{
+    
+    margin-bottom: 1.0em !important;
+}
+
+
+.slidePaneUnderlay {
+	z-index: 10;
+}
+
+.slidePaneContent {
+	z-index: 11;
+	padding: 0;
+	background: var(--menu-body);
+	color: var(--light-text);
+}
+.slidePane{ 
+    border: 0px;
+}
+.shadow{
+    height: 100%;
+    position: fixed;
+    right: -100px;
+    width: 100px;
+    -webkit-box-shadow: 0 9px 16px 0 rgba(0,0,0,.5);
+    box-shadow: 0 9px 16px 0 rgba(0,0,0,.5);
+    -webkit-box-shadow: var(--box-shadow-dimensions-large) var(--color-box-shadow-strong);
+    box-shadow: var(--box-shadow-dimensions-large) var(--color-box-shadow-strong);
+
+}

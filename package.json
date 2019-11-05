@@ -1,0 +1,45 @@
+{
+  "name": "mayahc",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "dojo build --mode dev --watch --serve -p 2000",
+    "build": "dojo build --mode dist",
+    "build:dev": "dojo build --mode dev",
+    "test": "dojo test",
+    "test:unit": "dojo build --mode unit && dojo test --unit --config local",
+    "test:functional": "dojo build --mode functional && dojo test --functional --config local",
+    "test:all": "dojo build --mode unit && dojo build --mode functional && dojo test --all --config local"
+  },
+  "dependencies": {
+    "@dojo/framework": "^5.0.0",
+    "@dojo/loader": "^2.0.0",
+    "@dojo/themes": "^5.0.0",
+    "@dojo/widgets": "^5.0.0",
+    "@types/md5": "^2.1.33",
+    "@types/uuid": "^3.4.4",
+    "axios": "^0.18.0",
+    "cldr-data": "^34.0.0",
+    "cldrjs": "0.5.0",
+    "md5": "^2.2.1",
+    "moment-mini": "^2.22.1",
+    "random-name": "^0.1.2",
+    "snarkdown": "^1.2.2",
+    "tslib": "~1.8.1",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@dojo/cli": "^5.0.0",
+    "@dojo/cli-build-app": "^5.0.0",
+    "@dojo/cli-create-theme": "^5.0.0",
+    "@dojo/cli-create-widget": "^5.0.0",
+    "@dojo/cli-test-intern": "^5.0.0",
+    "@types/glob": "~5.0.0",
+    "@types/grunt": "~0.4.0",
+    "@types/marked": "^0.3.0",
+    "@types/node": "^6.0.46",
+    "@types/sinon": "^1.16.35",
+    "sinon": "^2.0.0",
+    "tslint": "5.2.0",
+    "typescript": "~3.2.4"
+  }
+}

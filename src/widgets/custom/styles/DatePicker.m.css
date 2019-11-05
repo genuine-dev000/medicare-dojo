@@ -1,0 +1,17 @@
+@import '../../styles/variables.css';
+.root {
+	text-align: center;
+	/* padding: 0.5em; */
+	color: #000;
+}
+
+.hidden {
+  display: none;
+}
+
+.calendarcontainer {
+  background: #fff;
+}
+.input:focus{
+    border-left-color: var(--color-highlight);
+}

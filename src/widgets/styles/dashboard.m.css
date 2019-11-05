@@ -1,0 +1,12 @@
+.summary {
+	margin-bottom: 8px;
+}
+
+.summaryTitle {
+	border-bottom: 1px solid rgba(0, 0, 0, .12);
+	justify-content: center;
+}
+
+.task {
+	cursor: pointer;
+}

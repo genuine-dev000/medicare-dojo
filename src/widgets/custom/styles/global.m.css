@@ -1,0 +1,51 @@
+@import '../../styles/variables.css';
+.root{
+    background-color: aqua;
+}
+.black{
+    color: black;
+}
+.underline{
+    text-decoration: underline;
+}
+.code{
+    margin-top: .4em;
+    margin-bottom: .4em;
+}
+.label{
+    font-size: .85em;
+    
+}
+.input{
+    border-bottom: 1px solid rgba(0,0,0,1);
+}
+.input:focus{
+    border-left-color: var(--color-highlight);
+    
+}
+label{
+    font-size: 0.8em !important;
+    /* line-height: 0.8em !important; */
+}
+.margin_bottom_small{
+    margin-bottom: .05em;
+}
+.margin_top_small{
+    margin-top: .05em;
+}
+.margin_small{
+    margin: 0.5em 0;
+}
+.text_indext{
+    margin-left:0.85em;
+}
+.justify{
+    text-align: justify;
+}
+.button{
+    min-width: 40px;
+    min-height: 20px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 12px;
+}

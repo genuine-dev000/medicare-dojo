@@ -1,0 +1,38 @@
+@import '../../styles/variables.css';
+
+.summary {
+	margin-bottom: 8px;
+}
+
+.summaryTitle {
+	border-bottom: 1px solid rgba(0, 0, 0, .12);
+	justify-content: center;
+}
+
+.summaryListItem {
+	border-bottom: none;
+	padding: 0;
+	height: auto;
+}
+
+.form {
+	cursor: pointer;
+}
+
+.dialogTitle {
+	background: var(--menu-header);
+	text-align: left;
+}
+
+.dialogUnderlay {
+	z-index: 20;
+}
+
+.dialogMain {
+	z-index: 21;
+	width: 90%;
+	max-width: 300px;
+	min-height: 0;
+	top: 25%;
+	text-align: center;
+}

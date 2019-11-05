@@ -1,0 +1,237 @@
+@import '../../styles/variables.css';
+
+.root {
+	position: relative;
+	font-size: 16px;
+	display: inline-block;
+	box-sizing: border-box;
+	margin: 0;
+	
+}
+
+.root .button {
+	position: absolute;
+	bottom: 20px;
+}
+.alignRight {
+	text-align: right;
+}
+
+.fullWidth {
+	width: 100%;
+	padding: 20px 0;
+}
+.widthHalf{
+	width: 50%;
+	padding: 0;
+}
+.insideWidget{
+	padding:0.85em 0 !important;
+	width: 100% !important;
+	margin-left:0 !important;
+}
+.halfInput{
+	margin: 0;
+	padding: 0;
+}
+.expandable {
+	min-width: 32px;
+	width: auto;
+	min-height: 32px;
+}
+
+.expandable .buttonIcon {
+	top: 16px;
+}
+.no_padding{
+	border: none;
+	padding: 0;
+	margin:0;
+	border-bottom: 1px solid #aaa;
+	margin-left: 0.8em;
+	font-size: 0.8em;
+}
+.no_margin{
+	margin:0px !important;
+}
+.with_padding{
+	font-size: 16px;
+	border: none;
+	margin: 0;
+	padding: 8px 0;
+	border-bottom: 1px solid rgba(0,0,0, 0.12);
+}
+.input {
+	display: block;
+	font-family: "Helvetica", "Arial", sans-serif;
+	width: 100%;
+	background: none;
+	text-align: left;
+	color: inherit;
+	border-radius: 0;
+	min-height: 20px;
+}
+.displayInlineBlock{
+	display: inline-block !important;
+	width: 89%;
+}
+select.input {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+
+.input:focus {
+	border-bottom: 1px solid var(--accent);
+}
+
+.input:invalid {
+	border-bottom: 1px solid var(--error);
+}
+
+.input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+.input[type="number"]::-webkit-inner-spin-button,
+.input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.root:focus,
+.input:focus {
+	outline: none;
+}
+
+.invalid .input {
+	border-color: var(--error);
+	box-shadow: none;
+}
+
+fieldset[disabled] .root .input,
+.disabled .input,
+.readonly .input {
+	background-color: transparent;
+	border-bottom: 1px dotted rgba(0,0,0, 0.12);
+	color: rgba(0,0,0, 0.26);
+}
+
+.root textarea.input {
+	display: block;
+}
+
+.label {
+	bottom: 0;
+	color: rgba(0,0,0, 0.26);
+	font-size: 16px;
+	left: 0;
+	right: 0;
+	pointer-events: none;
+	position: absolute;
+	display: block;
+	top: 24px;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-align: left;
+}
+
+.floating {
+	transition-duration: 0.2s;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+fieldset[disabled] .label,
+.disabled .label {
+	color: rgba(0,0,0, 0.26);
+}
+
+.readonly .label,
+.readonly .input,
+.readonly.dirty .label,
+.readonly.dirty .input {
+	color: var(--grey-text);
+}
+
+.root:focus .floating,
+.input:focus ~ .floating,
+.dirty .floating,
+.readonly .floating {
+	font-size: 12px;
+	top: 4px;
+	visibility: visible;
+}
+
+.root:focus .floating,
+.input:focus ~ .floating,
+.dirty .floating {
+	color: var(--accent);
+}
+
+.input:invalid ~ .label {
+	color: var(--error);
+	font-size: 12px;
+}
+
+.input:invalid ~ .floating {
+	top: 4px;
+	visibility: visible;
+}
+
+.label:after {
+	background-color: var(--accent);
+	bottom: 20px;
+	content: '';
+	height: 2px;
+	left: 45%;
+	position: absolute;
+	transition-duration: 0.2s;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	visibility: hidden;
+	width: 10px;
+}
+
+.root:focus .label:after {
+	left: 0;
+	visibility: visible;
+	width: 100%;
+}
+
+.input:invalid ~ .label:after {
+	background-color: var(--error);
+}
+
+.input::-webkit-datetime-edit,
+.input::-webkit-datetime-edit {
+	color: transparent;
+ }
+
+.dirty .input::-webkit-datetime-edit,
+.input:focus::-webkit-datetime-edit {
+	color: var(--grey-text);
+}
+
+.date:after,
+.time:after {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	text-align: center;
+	color: rgba(0,0,0, 0.26);
+	letter-spacing: normal;
+	text-transform: none;
+	word-wrap: normal;
+	font-feature-settings: 'liga';
+	-webkit-font-smoothing: antialiased;
+	position: absolute;
+	right: 10px;
+	top: 30px;
+}
+
+.date:after {
+	content: 'event'
+}
+
+.time:after {
+	content: 'schedule'
+}
